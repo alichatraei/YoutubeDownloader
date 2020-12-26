@@ -11,3 +11,6 @@ html {
 header {
   @include header;
 }
+main {
+  @include content;
+}

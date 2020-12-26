@@ -18,22 +18,25 @@ html {
 }
 
 header {
-  background-color: #ecf0f1;
-  height: 20%;
+  background: #ecf0f1;
+  box-shadow: 0px 0px 5px 1px #7f8c8d;
+  height: auto;
   display: flex;
+  width: auto;
+  padding: 1rem;
 }
 header nav {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
 header input {
   font-size: 20px;
   border: 0.1rem solid #c0392b;
-  width: 70rem;
+  width: 60%;
   padding: 1rem 1rem;
+  margin: 0 auto;
   border-radius: 0.2rem;
   transition-duration: 0.2s;
 }
@@ -44,7 +47,7 @@ header input:focus {
   box-shadow: 0.1rem 0.1rem 1rem #7f8c8d;
 }
 header button {
-  width: 20rem;
+  width: 30%;
   height: 50px;
   color: #ecf0f1;
   font-size: 20px;
@@ -62,14 +65,70 @@ header button:focus {
   outline: none;
 }
 @media screen and (max-width: 600px) and (min-width: 200px) {
+  header nav {
+    display: block;
+    text-align: center;
+  }
   header input {
-    margin: 1rem;
-    width: 10rem;
-    font-size: medium;
+    width: auto;
+    font-size: small;
   }
   header button {
-    margin: 1rem;
-    width: 5rem;
-    font-size: medium;
+    width: auto;
+    font-size: small;
+    margin: 1rem 1rem;
+  }
+}
+
+main {
+  height: auto;
+  width: 90%;
+  margin: 1rem auto;
+  background: #ecf0f1;
+}
+main p {
+  font-size: x-large;
+  padding: 1rem;
+}
+main #showTable {
+  padding: 2rem;
+}
+main #showTable table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+main #showTable th,
+main #showTable td {
+  text-align: center;
+  padding: 0.8rem;
+  border: 0.1rem solid #7f8c8d;
+}
+main #showTable tbody:nth-child(even) tr {
+  background-color: #bdc3c7;
+}
+main #showTable button {
+  color: #ecf0f1;
+  font-size: medium;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  transition-duration: 1s;
+}
+main #showTable button:hover {
+  background-color: #3498db;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+main #showTable button:focus {
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  main #showTable {
+    width: auto;
+  }
+  main table {
+    width: auto;
   }
 }

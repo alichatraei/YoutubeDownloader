@@ -5,13 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Downloader</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <input type="text" placeholder="لینک خود را وارد کنید : https://youtu.be/F4fbwKV9dBU" />
-        <button>دانلود ویدیو</button>
+        <input
+          type="text"
+          placeholder="لینک خود را وارد کنید : https://youtu.be/F4fbwKV9dBU"
+          class="animate__animated animate__fadeInDown"
+          id="link"
+        />
+        <button class="animate__animated animate__fadeInDown" id="btnDownload">
+          دانلود ویدیو
+        </button>
       </nav>
     </header>
+    <main>
+      <p>دانلود پست یوتیوب</p>
+      <!-- Video player -->
+      <nav id="videoPlayer"></nav>
+      <!-- Table for download -->
+      <nav id="showTable">
+        <table>
+          <thead>
+            <tr>
+              <th>نوع فایل</th>
+              <th>کیفیت فایل</th>
+              <th>لینک دانلود</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ویدیو (MP4)</td>
+              <td>کیفیت خوب (720P)</td>
+              <td><button>دانلود</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </nav>
+    </main>
   </body>
 </html>
