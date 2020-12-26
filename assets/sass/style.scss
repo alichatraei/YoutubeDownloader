@@ -1,2 +1,13 @@
 @import "reset";
 @import "variables";
+@import "mixins";
+body {
+  background-color: $bg-red;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+header {
+  @include header;
+}

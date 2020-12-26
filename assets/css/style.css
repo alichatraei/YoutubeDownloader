@@ -5,4 +5,71 @@
 * {
   margin: 0;
   font-family: "dana";
+  direction: rtl;
+}
+
+body {
+  background-color: #c0392b;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+header {
+  background-color: #ecf0f1;
+  height: 20%;
+  display: flex;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header input {
+  font-size: 20px;
+  border: 0.1rem solid #c0392b;
+  width: 70rem;
+  padding: 1rem 1rem;
+  border-radius: 0.2rem;
+  transition-duration: 0.2s;
+}
+header input:focus {
+  outline: none;
+  border-radius: 1rem;
+  transition-duration: 0.2s;
+  box-shadow: 0.1rem 0.1rem 1rem #7f8c8d;
+}
+header button {
+  width: 20rem;
+  height: 50px;
+  color: #ecf0f1;
+  font-size: 20px;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 1rem;
+  transition-duration: 1s;
+}
+header button:hover {
+  background-color: #3498db;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+header button:focus {
+  outline: none;
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  header input {
+    margin: 1rem;
+    width: 10rem;
+    font-size: medium;
+  }
+  header button {
+    margin: 1rem;
+    width: 5rem;
+    font-size: medium;
+  }
 }
