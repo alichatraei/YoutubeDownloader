@@ -35,20 +35,20 @@ header input {
   font-size: 20px;
   border: 0.1rem solid #c0392b;
   width: 60%;
-  padding: 1rem 1rem;
+  padding: 0.5rem;
   margin: 0 auto;
   border-radius: 0.2rem;
   transition-duration: 0.2s;
 }
 header input:focus {
   outline: none;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   transition-duration: 0.2s;
   box-shadow: 0.1rem 0.1rem 1rem #7f8c8d;
 }
 header button {
   width: 30%;
-  height: 50px;
+  padding: 0.5rem;
   color: #ecf0f1;
   font-size: 20px;
   background-color: #2980b9;
@@ -129,8 +129,11 @@ main #videoPlayer {
   text-align: center;
 }
 main #videoPlayer video {
-  border: 0.5rem solid mediumaquamarine;
+  box-shadow: 0rem 0.3rem 0.4rem 0.1rem #95a5a6;
   width: 600px;
+}
+main #videoPlayer video:focus {
+  outline: none;
 }
 @media screen and (max-width: 600px) {
   main #showTable {
@@ -139,4 +142,19 @@ main #videoPlayer video {
   main table {
     width: auto;
   }
+  main #videoPlayer video {
+    width: 80%;
+    margin: 0rem auto;
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  bottom: 0rem;
+  position: fixed;
+  width: 100%;
+}
+footer p {
+  margin: 1rem;
 }
