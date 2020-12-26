@@ -1,0 +1,9 @@
+// fonts
+@font-face {
+  font-family: "dana";
+  src: url("../font/dana-regular.woff");
+}
+* {
+  margin: 0;
+  font-family: "dana";
+}
