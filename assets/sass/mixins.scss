@@ -105,6 +105,14 @@
       outline: none;
     }
   }
+  #videoPlayer {
+    width: auto;
+    text-align: center;
+    video {
+      border: 0.5rem solid mediumaquamarine;
+      width: 600px;
+    }
+  }
   @media screen and (max-width: 600px) {
     #showTable {
       width: auto;
@@ -112,5 +120,13 @@
     table {
       width: auto;
     }
+  }
+}
+@mixin footer {
+  width: 100%;
+  text-align: center;
+  p {
+    bottom: 0rem;
+    position: fixed;
   }
 }

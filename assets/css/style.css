@@ -124,6 +124,14 @@ main #showTable button:hover {
 main #showTable button:focus {
   outline: none;
 }
+main #videoPlayer {
+  width: auto;
+  text-align: center;
+}
+main #videoPlayer video {
+  border: 0.5rem solid mediumaquamarine;
+  width: 600px;
+}
 @media screen and (max-width: 600px) {
   main #showTable {
     width: auto;
