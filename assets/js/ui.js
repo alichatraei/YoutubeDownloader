@@ -46,6 +46,9 @@ class UI {
     `;
   }
   showError() {
-
+    //show Error Message in Main tag
+    document.querySelector(
+      "main"
+    ).innerHTML = `<p style="color: red">لطفا لینک را بررسی کنید و مجددا سعی نمایید!</p>`;
   }
 }
