@@ -89,6 +89,8 @@ main {
 main p {
   font-size: x-large;
   padding: 1rem;
+  text-align: center;
+  width: 100%;
 }
 main #showTable {
   padding: 2rem;
