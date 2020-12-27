@@ -65,6 +65,12 @@
   width: 90%;
   margin: 1rem auto;
   background: $header-white;
+  #spinner {
+    margin: auto;
+    padding: 1rem auto;
+    display: flex;
+    justify-content: center;
+  }
   p {
     font-size: x-large;
     padding: 1rem;
@@ -119,6 +125,9 @@
     }
   }
   @media screen and (max-width: 600px) {
+    p {
+      width: auto;
+    }
     #showTable {
       width: auto;
     }
@@ -138,8 +147,19 @@
   text-align: center;
   bottom: 0rem;
   position: fixed;
+  right: 0;
   width: 100%;
   p {
     margin: 1rem;
+  }
+  @media screen and (max-width: 600px) and(max-height: 500px) {
+    width: auto;
+    display: flex;
+    position: relative;
+    
+    p {
+      justify-content: center;
+      width: auto;
+    }
   }
 }

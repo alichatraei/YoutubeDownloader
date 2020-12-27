@@ -7,6 +7,9 @@ class Data extends UI {
   async fetchData(link) {
     let URL = `https://youtube-video-info.p.rapidapi.com/video_formats?video=${link}`;
     console.log(URL);
+    //show Wait Spinner
+    this.showLoading();
+    //Fetching API
     await fetch(URL, {
       method: "GET",
       headers: {
